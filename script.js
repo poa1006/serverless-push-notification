@@ -6,6 +6,7 @@ if (navigator.serviceWorker) {
   console.log('serviceWorker first try');
   registerPush('Csy0uWHebU3pw--NmWa09ZoSgT7bHdB_J7PQEPjj-MlfaFVxekh8a4SmBD8VLssY43XwdO1Tz2S9rStKX_dtfo');
 }
+console.log('No serviceWorker');
 
 function registerPush(appPubkey) {
   navigator.serviceWorker.register('service-worker.js');
