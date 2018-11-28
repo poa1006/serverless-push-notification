@@ -2,7 +2,7 @@ console.log('Hello world');
 
 if (navigator.serviceWorker) {
   console.log('serviceWorker first try');
-  registerPush('BGXT0Za_GYCj28Fazv1dkeSMoYRxanN05SNLbfInwyvvBK_ek4_DbcG_PE6mwzedLX5BBozFz6_dTXR6j0YUXtI');
+  registerPush('BMtvv6ypKsXF_b9J5IQjUMVohEenVZ-eAfQK3VJc1WB4wUWSPNgNr2fszEJazYF2bBYJnF2YAi2jIDLtdlE1tSE');
 }
 console.log('No serviceWorker');
 
