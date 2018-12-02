@@ -8,7 +8,7 @@ console.log("here ");
 console.log(configuredWebPush.vapidPublicKey);
 console.log(data);
 
-configuredWebPush.webPush.sendNotification(data.subscription, 'po test')
+configuredWebPush.webPush.sendNotification(data.subscription, data.payload)
     .then(function (response) {
         console.log('Response: ' + response);
         //res.status(201).send(response);

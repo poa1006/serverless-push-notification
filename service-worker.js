@@ -7,6 +7,8 @@ self.addEventListener('push', function(event) {
   //   notificationTitle = 'Received Payload';
   //   notificationOptions.body = `Push data: '${dataText}'`;
   // }
+  const payload = event.data ? event.data.text() : 'no payload';
+  console.log(payload);
 
   event.waitUntil(
     Promise.all([
