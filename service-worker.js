@@ -2,16 +2,20 @@ self.addEventListener('push', function(event) {
   console.log('Received push');
   console.log(event);
 
-  if (event.data) {
-    const dataText = event.data.text();
-    notificationTitle = 'Received Payload';
-    notificationOptions.body = `Push data: '${dataText}'`;
-  }
+  // if (event.data) {
+  //   const dataText = event.data.text();
+  //   notificationTitle = 'Received Payload';
+  //   notificationOptions.body = `Push data: '${dataText}'`;
+  // }
 
   event.waitUntil(
     Promise.all([
       self.registration.showNotification(
-        notificationTitle, notificationOptions)
+        'title',
+        {
+          title:  'po test',
+          message: 'hello'
+        })
     ])
   );
 });
