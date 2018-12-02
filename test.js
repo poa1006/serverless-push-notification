@@ -1,6 +1,6 @@
 const configuredWebPush = require('./web-push-config');
 
-data = {"subscription":{"endpoint":"https://fcm.googleapis.com/fcm/send/ct8wAGEINkE:APA91bHpsEAH_5PDOpo949y3umofbl69JQClI2H-dNoC7yeYnM4SzbRvQOTp2YV9GrbHP_fDH7GeFP7ilyJ4elJboHNJU4o-7mF_l06M2-yplF0P6d126N70JDHtGKhrEFyHMzfP6wak","expirationTime":null,"keys":{"p256dh":"BPBIBHIQokhJbdhvRgOjFlOTR5JKo_uIRklcYl0CR-8nlXoRh1w0uZmQzKX5tCepp7S6Htqwx6OG4iNSitVzxyE","auth":"oSjBK9jWDIJ2HJBWEtHHow"}}};
+data = {"subscription":{"endpoint":"https://fcm.googleapis.com/fcm/send/fwYZk3a4dWU:APA91bFY0n4Wg266ZjqtcTCt0V5GL4f3FQEgIurLKaWGH8a0gUgtopIPHuo8z33VS3kVRzzjFfTrjweSe6Z9gs1mh3HDZsg4A6V_JHQ6RHv1OAjhOiZpnqwMRZYceuGALyc95VtZzBPl","expirationTime":null,"keys":{"p256dh":"BJQHpuk147qyvb0u95hB39JjgMdmlonwQhAsv1BpKBidGz7LXAPGLsFfkKK2U2AGmiQmHynj7EotRLKCFHNwNr8","auth":"CRki76k7TxKLcgTquk0xHw"}}};
 data.payload = JSON.stringify({title: 'Annoyed yet?', message: 'Hello there!'});
 // data.encoding = { contentEncoding: 'aes128gcm' };
 

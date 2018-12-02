@@ -10,13 +10,14 @@ self.addEventListener('push', function(event) {
   const payload = event.data ? event.data.text() : 'no payload';
   console.log(payload);
 
+  const data = JSON.parse(payload);
+
   event.waitUntil(
     Promise.all([
       self.registration.showNotification(
-        'title',
+        data.title,
         {
-          title:  'po test',
-          message: 'hello'
+          body:  data.message
         })
     ])
   );
